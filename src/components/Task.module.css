@@ -1,0 +1,143 @@
+.task {
+  width: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.taskInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 6.5rem;
+}
+
+.createdTask,
+.completedTask {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.taskNumber {
+  max-width: 50px;
+  height: 19px;
+  padding: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--gray-400);
+}
+
+.createdTask p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.completedTask p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--purple);
+}
+
+.taskNumber {
+  color: var(--gray-100);
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+.newTask {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.newTask textarea {
+  width: 100%;
+  height: 5.4rem;
+  background: var(--gray-500);
+  resize: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gray-100);
+}
+
+.newTask textarea::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.newTask button {
+  width: 9rem;
+  height: 5.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+}
+.newTask button:hover {
+  background: var(--blue);
+  border: 1px solid var(--gray-100);
+  transition: 0.5s;
+}
+
+.newTask strong {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.noTasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.6rem;
+}
+
+.noTasks strong {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gray-300);
+  margin-top: 1.6rem;
+  
+}
+
+.noTasks img {
+  margin-top: 6.4rem;
+}
+
+.noTasks span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--gray-300);
+}
+
+.line {
+  max-width: 100%;
+  width: 100%;
+
+  display: flex;
+
+  border: 1px solid var(--gray-400);
+}
